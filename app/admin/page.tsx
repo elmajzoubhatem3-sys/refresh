@@ -97,7 +97,7 @@ export default function AdminPage() {
   const [productImageFile, setProductImageFile] = useState<File | null>(null);
 
   const [headerType, setHeaderType] = useState<"text" | "banner">("text");
-  const [headerTitle, setHeaderTitle] = useState("Stop Snack");
+  const [headerTitle, setHeaderTitle] = useState("Refresh");
   const [headerSubtitle, setHeaderSubtitle] = useState("");
   const [headerSubtitleEn, setHeaderSubtitleEn] = useState("");
   const [headerBannerFiles, setHeaderBannerFiles] = useState<File[]>([]);
@@ -172,7 +172,7 @@ export default function AdminPage() {
 
     if (settingsData) {
       setHeaderType(settingsData.header_type || "text");
-      setHeaderTitle(settingsData.header_title || "Stop Snack");
+      setHeaderTitle(settingsData.header_title || "Refresh");
       setHeaderSubtitle(settingsData.header_subtitle || "");
       setHeaderSubtitleEn(settingsData.header_subtitle_en || "");
 
@@ -571,7 +571,7 @@ export default function AdminPage() {
     <main className="min-h-screen bg-[#050505] px-4 py-6 text-white md:px-8">
       <div className="mx-auto max-w-7xl space-y-6">
         <div className="rounded-[28px] border border-white/10 bg-white/10 p-5 shadow-2xl backdrop-blur-2xl">
-          <h1 className="text-3xl font-semibold">Stop Snack Admin</h1>
+          <h1 className="text-3xl font-semibold">Refresh Admin</h1>
         </div>
 
         <div className="rounded-[28px] border border-white/10 bg-white/10 p-5 backdrop-blur-2xl">

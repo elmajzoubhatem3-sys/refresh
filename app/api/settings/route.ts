@@ -27,7 +27,7 @@ export async function PATCH(req: Request) {
     const body = await req.json();
 
     const header_type = body?.header_type === "banner" ? "banner" : "text";
-    const header_title = body?.header_title?.trim() || "Stop Snack";
+    const header_title = body?.header_title?.trim() || "Refresh";
     const header_subtitle = body?.header_subtitle?.trim() || "";
     const header_subtitle_en = body?.header_subtitle_en?.trim() || "";
     const header_banner_url = body?.header_banner_url?.trim() || "";
