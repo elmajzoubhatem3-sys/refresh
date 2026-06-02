@@ -295,7 +295,7 @@ export default function MenuPage() {
 
   const hasLanguage = language === "ar" || language === "en";
 
-  const headerTitle = settings?.header_title || "Stop Snack";
+  const headerTitle = settings?.header_title || "Refresh";
   const headerSubtitle =
     language === "en"
       ? settings?.header_subtitle_en || settings?.header_subtitle || ""
@@ -326,7 +326,7 @@ export default function MenuPage() {
       {!hasLanguage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-5 backdrop-blur-xl">
           <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/10 p-6 text-center shadow-2xl backdrop-blur-2xl">
-            <h1 className="text-2xl font-semibold">Stop Snack</h1>
+            <h1 className="text-2xl font-semibold">Refresh</h1>
             <p className="mt-3 text-neutral-200">Choose menu language</p>
 
             <div className="mt-6 grid grid-cols-2 gap-3">
